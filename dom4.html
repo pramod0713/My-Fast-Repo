@@ -9,8 +9,11 @@
 </head>
 <body>
     <input type="number" placeholder="first value" id="input1">
-    <input type="number" placeholder="second value" id="input2">
-    <button id="multi" onclick="multi()">multi</button>
+    <input type="number" placeholder="second value" id="input2"> <br>
+    <button id="add" onclick="add()">Add</button> 
+    <button id="subtract" onclick="subtract()">Subtract</button>
+    <button id="multi" onclick="multi()">Multiply</button>
+    <button id="divide" onclick="divide()">Divide</button>
 </body>
 </html>
 <script>
@@ -18,5 +21,8 @@
     let val2=document.getElementById("input2")
     function multi(){
         console.log(Number(val1.value)*Number(val2.value))
+    }
+    function divide(){
+        console.log(Number(val1.value)/Number(val2.value))
     }
 </script>
