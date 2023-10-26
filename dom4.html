@@ -1,0 +1,22 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <input type="number" placeholder="first value" id="input1">
+    <input type="number" placeholder="second value" id="input2">
+    <button id="multi" onclick="multi()">multi</button>
+</body>
+</html>
+<script>
+    let val1=document.getElementById("input1")
+    let val2=document.getElementById("input2")
+    function multi(){
+        console.log(Number(val1.value)*Number(val2.value))
+    }
+</script>
